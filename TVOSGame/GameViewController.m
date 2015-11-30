@@ -8,15 +8,20 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "ZHSKCursorView.h"
+
+@interface GameViewController ()
+@end
+
 
 @implementation GameViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Configure the view.
-    SKView * skView = (SKView *)self.view;
+    ZHSKCursorView * skView = (ZHSKCursorView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     /* Sprite Kit applies additional optimizations to improve rendering performance */
@@ -24,16 +29,22 @@
     
     // Create and configure the scene.
     GameScene *scene = [GameScene nodeWithFileNamed:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.scaleMode = SKSceneScaleModeResizeFill;
     
     // Present the scene.
     [skView presentScene:scene];
+    
+    
+    // Callback for tap event
+    [skView setTapBlock:^(CGPoint point) {
+        [scene tapAtPoint:CGPointMake(point.x, skView.bounds.size.height - point.y)];
+    }];
 }
 
-- (void)didReceiveMemoryWarning
-{
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
 }
+
 
 @end

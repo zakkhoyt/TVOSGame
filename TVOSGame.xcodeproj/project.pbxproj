@@ -17,6 +17,9 @@
 		C68F45151BF311430044F020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68F45141BF311430044F020 /* Assets.xcassets */; };
 		C68F45201BF311440044F020 /* TVOSGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C68F451F1BF311440044F020 /* TVOSGameTests.m */; };
 		C68F452B1BF311440044F020 /* TVOSGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C68F452A1BF311440044F020 /* TVOSGameUITests.m */; };
+		C68F453A1BF42FBB0044F020 /* ZHUICursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68F45391BF42FBB0044F020 /* ZHUICursorView.m */; };
+		C68F453D1BF4303A0044F020 /* ZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68F453C1BF4303A0044F020 /* ZHViewController.m */; };
+		C68F45401BF4330D0044F020 /* ZHSKCursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68F453F1BF4330D0044F020 /* ZHSKCursorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		C68F45261BF311440044F020 /* TVOSGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVOSGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68F452A1BF311440044F020 /* TVOSGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVOSGameUITests.m; sourceTree = "<group>"; };
 		C68F452C1BF311440044F020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68F45381BF42FBB0044F020 /* ZHUICursorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHUICursorView.h; sourceTree = "<group>"; };
+		C68F45391BF42FBB0044F020 /* ZHUICursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHUICursorView.m; sourceTree = "<group>"; };
+		C68F453B1BF4303A0044F020 /* ZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHViewController.h; sourceTree = "<group>"; };
+		C68F453C1BF4303A0044F020 /* ZHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHViewController.m; sourceTree = "<group>"; };
+		C68F453E1BF4330D0044F020 /* ZHSKCursorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHSKCursorView.h; sourceTree = "<group>"; };
+		C68F453F1BF4330D0044F020 /* ZHSKCursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHSKCursorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +127,12 @@
 				C68F45141BF311430044F020 /* Assets.xcassets */,
 				C68F45161BF311430044F020 /* Info.plist */,
 				C68F45011BF311430044F020 /* Supporting Files */,
+				C68F45381BF42FBB0044F020 /* ZHUICursorView.h */,
+				C68F45391BF42FBB0044F020 /* ZHUICursorView.m */,
+				C68F453E1BF4330D0044F020 /* ZHSKCursorView.h */,
+				C68F453F1BF4330D0044F020 /* ZHSKCursorView.m */,
+				C68F453B1BF4303A0044F020 /* ZHViewController.h */,
+				C68F453C1BF4303A0044F020 /* ZHViewController.m */,
 			);
 			path = TVOSGame;
 			sourceTree = "<group>";
@@ -279,10 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68F453D1BF4303A0044F020 /* ZHViewController.m in Sources */,
 				C68F450E1BF311430044F020 /* GameViewController.m in Sources */,
 				C68F45061BF311430044F020 /* AppDelegate.m in Sources */,
 				C68F45091BF311430044F020 /* GameScene.m in Sources */,
+				C68F45401BF4330D0044F020 /* ZHSKCursorView.m in Sources */,
 				C68F45031BF311430044F020 /* main.m in Sources */,
+				C68F453A1BF42FBB0044F020 /* ZHUICursorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
